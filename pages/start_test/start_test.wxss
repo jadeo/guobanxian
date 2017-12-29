@@ -1,0 +1,29 @@
+/* pages/start_test/start_test.wxss */
+.progress progress{
+  width:520rpx;
+}
+.progress{
+  margin-bottom:60rpx;
+}
+.select_left text{
+  width:40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  border:1rpx solid #ABB5BC;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top:-10rpx;
+}
+.start_wrap{
+  padding: 0 80rpx;
+  width:590rpx;
+}
+.select{
+  height: 140rpx;
+  line-height: 140rpx;
+}
+.select_left icon{margin-top:20rpx;}
+.select_right{width:558rpx;margin-left:26rpx;}
+.select_wrap .select:last-child .select_right{border:none}
+.return{margin-top:40rpx;}
+.subject_cont{line-height: 60rpx;margin:20rpx 0;}

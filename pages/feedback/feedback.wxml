@@ -1,0 +1,5 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='feedback_wrap'>
+    <textarea class='f28' placeholder='请输入你的反馈' placeholder-style='color:#818C92' maxlength='-1'></textarea>
+    <view class='submit text_f bg_blue border_radius'>提交反馈</view>
+</view>

@@ -1,0 +1,55 @@
+<!--pages/my_center/my.wxml-->
+<view class='container_wrap bg_gr'>
+<!--个人信息  -->
+    <view class='my_userinfo flex'>
+          <view style='margin-top:20rpx;'>
+              <image class='ve' src='../../imgs/1.png'></image>
+              <text class='f32 text_f username ve line_clamp1'>用户命用户命用户命用户命用户命用户命用户命用户命用户命用户命用户命用户命用户命用户命</text>
+          </view>
+    </view>
+
+<!--列表  -->
+  <view class='list_wrap'>
+      <view class='list_one bg_f'>
+          <view class='rank flex just_between title_wrap border_bottom align' bindtap='test_mange'>
+              <image style='width:38rpx;height:38rpx' src='../../imgs/my1.png'></image>
+              <view>
+                  <text class='f28 tile_color mr_10'>测试管理</text>
+                  <image class='next' src='../../imgs/next_icon.png'></image>
+              </view>
+          </view>
+          <view class='rank flex just_between title_wrap border_bottom align' bindtap='group_map_rank'>
+              <image style='width:38rpx;height:38rpx' src='../../imgs/my2.png'></image>
+              <view>
+                  <text class='f28 tile_color mr_10'>测试匹配度</text>
+                  <image class='next' src='../../imgs/next_icon.png'></image>
+              </view>
+          </view>
+      </view>
+      <view class='list_one bg_f'>
+          <view class='rank flex just_between title_wrap border_bottom align' bindtap='feedback'>
+              <image style='width:38rpx;height:38rpx' src='../../imgs/my3.png'></image>
+              <view>
+                  <text class='f28 tile_color mr_10'>反馈</text>
+                  <image class='next' src='../../imgs/next_icon.png'></image>
+              </view>
+          </view>
+          <view class='rank flex just_between title_wrap border_bottom align' bindtap='custom'>
+              <image style='width:38rpx;height:38rpx' src='../../imgs/my4.png'></image>
+              <view>
+                  <text class='f28 tile_color mr_10'>客服</text>
+                  <image class='next' src='../../imgs/next_icon.png'></image>
+              </view>
+          </view>
+      </view>
+      <view class='list_one bg_f'>
+          <view class='rank flex just_between title_wrap border_bottom align' bindtap='more'>
+              <image style='width:38rpx;height:38rpx' src='../../imgs/my5.png'></image>
+              <view>
+                  <text class='f28 tile_color mr_10'>更多小程序</text>
+                  <image class='next' src='../../imgs/next_icon.png'></image>
+              </view>
+          </view>
+      </view>
+  </view>  
+</view>

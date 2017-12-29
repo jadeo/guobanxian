@@ -1,0 +1,62 @@
+/* pages/test_result/result.wxss */
+@import '../group_rank/rank';
+.test_des_detail{
+  position: relative;
+  padding-bottom:20rpx;
+}
+.test_des_detail text::before{
+  content: '';
+  width:12rpx;
+  height: 12rpx;
+  background-color: #4DA6FF;
+  border-radius: 6rpx;
+  position: absolute;
+  left:0;
+  top:24rpx;
+}
+.test_des_detail text{
+  margin-left:20rpx;
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.test_des_detail view{
+  margin-left: 20rpx;
+}
+.reword{
+  padding-top:30rpx;
+  padding-bottom:30rpx;
+}
+.reword_text{
+  font-size:48.38rpx;
+  width:100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border:1px solid #FF4057;
+   line-height: 100rpx; 
+}
+.info_wrap{
+  flex-wrap: wrap;
+  margin-top:36rpx;
+}
+.info_wrap image{
+  width:70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.info_wrap .info_cell{
+  flex:0 0 12%;
+}
+.change{
+  width:124rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  display: inline-block;
+  border:1rpx solid #E9ECF3;
+} 
+
+.friend_test_nor{
+  padding:55rpx 30rpx;
+}

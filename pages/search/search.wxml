@@ -1,0 +1,44 @@
+<!--pages/search/search.wxml-->
+<import src='../test_subject_template/template'/>
+     <!-- 搜索 -->
+<view class='search_wrap container_wrap bg_gr'>
+       <view class='header_full mokuai_wrap title_wrap border_bottom'>
+          <view class='input_wrap'>
+              <input class='ve f24 cont_color input2 bg_gr' placeholder='搜索' placeholder-style='color:#9BA0AE;font-size:24rpx;'  bindinput='get_value'> </input>
+              <i class="iconfont icon-search search "></i>
+              <i class="iconfont icon-wrong" bindtap='clear_search' style='display:inline-block'></i>
+          </view>        
+          <text class='f32 text_blue' bindtap='search_result'>搜索</text>
+     </view>  
+    <!--搜索历史  -->
+     <view class='search_history mokuai_wrap border_bottom' hidden='{{search_history}}' >
+        <view class='search_history_header flex just_between title_wrap'>
+            <view class='f28 title_color'>搜索历史</view>
+            <view class='f28 cont_color' bindtap='clear_his'>清除历史</view>
+        </view>
+        <view class='search_history_detail flex align'>
+            <view class='search_cell cont_color f24' wx:for='{{search_his}}' wx:key='*this'>{{item}}</view>
+        </view>
+        <view class='cont_color f24'  wx:if="{{search_his==''}}">暂无搜索</view>
+    </view> 
+    <!--热门搜索  -->
+     <view class='search_history mokuai_wrap' hidden='{{hot_search}}'>
+        <view class='search_history_header flex just_between title_wrap'>
+            <view class='f28 title_color'>热门搜索</view>
+        </view>
+        <view class='search_history_detail flex align'>
+            <view class='search_cell cont_color f24'>爱情爱情爱情</view>
+        </view>  
+    </view> 
+    <!--搜素结果  -->
+     <view hidden='{{search_result}}'>
+       <view class='search_result mokuai_wrap'  >
+           <view class='title_wrap f28 title_color'>搜索“爱情运势”的结果</view>
+       </view>
+    <template is='test_subject'></template> 
+    </view> 
+
+    <!--遮罩  -->
+    <!-- <view class='mask' hidden='{{mask_hidden}}'></view> -->
+    <!--弹框  -->
+</view>

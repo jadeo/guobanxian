@@ -1,0 +1,32 @@
+<!--pages/start_test/start_test.wxml-->
+<view class='start_wrap'>
+    <!--内容  -->
+    <view class='f34 title_color bold subject_cont'>{{subject.question_list[activeIndex].content}}</view>
+    <!--进度条  -->
+    <view class='progress flex just_center align'>
+          <view class='flex1'>
+             <progress percent='{{curIndex/10*100}}' color='#4DA6FF' stroke-width='4' style='border-radius:8rpx;'></progress>
+          </view>
+          <text class='f24 des_color'>1/{{subject.test_count}}</text>
+    </view>
+    <!--选项  -->
+    <view class='select_wrap'>
+        <view class='select flex just_center' wx:for='{{subject.question_list[activeIndex].choice_score}}' wx:key='*this' wx:for-index='index'>
+            <view class='select_left' bindtap='select' data-index='{{index}}'>
+                <text wx:if='{{num!==index}}'></text> 
+                <icon type='success' color='#FFCB41' wx:if='{{num==index}}'></icon>  
+            </view>
+            <view class='select_right f28 title_color border_bottom'>
+                {{item.choice}}
+            </view>
+        </view>
+    </view>
+    
+    <!--按钮  -->
+    <!-- <view class='btn_small text_f bg_blue title_wrap center return'>返回</view> -->
+     <!-- <view class='btn_small text_f bg_blue title_wrap center return'>上一题</view>  -->
+    <view class='flex just_between'>
+        <view class='btn_small text_f bg_blue title_wrap center return f36 border_radius' hidden='{{one}}' bindtap='pre'>上一题</view> 
+        <view class='btn_small text_f bg_blue title_wrap center return f36 border_radius' bindtap='look_result' wx:if='{{last}}'>查看结果</view> 
+    </view>
+</view>

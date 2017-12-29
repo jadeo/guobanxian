@@ -1,0 +1,22 @@
+<!--pages/hongbao/hongbao.wxml-->
+<view class='reword_wrap'>
+   <view class='reword_top'>
+       <image src='../../images/hongbaobg.png'></image>
+       <view class='reword_text'>赏</view>
+   </view>
+   <view class='reword_word'>
+      <text>赞赏一下吧！~</text>
+   </view>
+   <view class='remord_money'>
+      <block wx:for='{{num}}' wx:for-index='index'>
+         <view class="Grid-cell"  data-index='{{index}}' data-num='{{item}}' bindtap='reword_any'><text>{{item}}</text>元</view>
+      </block>
+   </view>
+   <view class='any_wrap'>
+      <form>
+         <input type='number' placeholder='自定义金额' placeholder-style='font-size:32rpx;color:rgba(222,92,79,0.4)' bindinput='get_money'></input>
+         <label class='reword_any' bindtap='reword_any'>赞赏</label>
+      </form>
+   </view>
+  
+</view> 

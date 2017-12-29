@@ -1,0 +1,6 @@
+<!--pages/more/more.wxml-->
+<import src='../test_subject_template/template'/>
+
+<view class='container_wrap bg_gr'>
+   <template is='rank' data='{{...item}}'></template>
+</view>

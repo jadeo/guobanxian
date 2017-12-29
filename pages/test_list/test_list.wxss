@@ -1,0 +1,2 @@
+/* pages/test_list/test_list.wxss */
+ @import "../index/index.wxss"; 

@@ -1,0 +1,15 @@
+<!--pages/test_manage/manage.wxml-->
+<import src='../test_subject_template/template'/>
+<view class='container_wrap bg_gr '>
+  <view class='recommed_change flex title_wrap center mokuai_wrap border_bottom' >
+  <text class="f28 title_color flex1 pr {{idx==index? 'active':''}}" wx:for='{{test_list_name}}' wx:for-index='index' data-index='{{index}}' data-idx='{{idx}}' bindtap='tab'>{{item}}</text>
+  </view>
+  <view class='no_list' wx:if='{{idx==0}}'>
+     
+  </view>
+  <view class='ready_list' wx:if='{{idx==1}}'></view>
+  <view class='wait_list' wx:if='{{idx==2}}'>
+       <template is='test_subject'></template>
+  </view>
+  <view class='want_list' wx:if='{{idx==3}}'></view>
+</view>

@@ -1,0 +1,31 @@
+/* pages/my_center/my.wxss */
+.my_userinfo image{
+  width:120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.my_userinfo{
+  width:100%;
+  height: 210rpx;
+  background: linear-gradient(#4DA6FF,#9BF8FF);
+  padding-left:30rpx;
+}
+.username{
+  max-width: 520rpx;
+  height: 50rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.list_wrap{
+  margin:0 30rpx;
+  margin-top:-40rpx;
+}
+.list_one{
+  padding:0 30rpx;
+  width:630rpx;
+}
+ .list_wrap .list_one{
+    margin-bottom:30rpx;
+} 

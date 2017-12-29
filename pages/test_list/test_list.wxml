@@ -1,0 +1,11 @@
+<!--pages/test_list/test_list.wxml-->
+<import src='../test_subject_template/template'/>
+<view class='container_wrap bg_gr'>
+  <view class='recommed_change flex title_wrap mokuai_wrap border_bottom'>
+          <text class='f28 title_color flex1'>{{title_name}}</text>
+          <view class='f28 cont_color compare' >
+              <text class="{{idx==index?'active':''}} pr" wx:for='{{all_compare}}' wx:for-index='index' data-index='{{index}}' data-idx='{{idx}}' bindtap='tab' wx:key='*this'>{{item}}</text>
+          </view>
+      </view>
+  <template is='test_subject'></template>
+</view>

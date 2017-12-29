@@ -1,0 +1,37 @@
+/* pages/group_rank/rank.wxss */
+.rank_img{
+  width:44rpx;
+  height: 50rpx;
+}
+.info_img{
+  width:70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin:0 20rpx;
+}
+
+.group_list{
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.group_list_left text{
+  display: inline-block;
+  max-width:370rpx;
+  overflow: hidden;
+  max-height: 120rpx;
+}
+
+.join_now{
+  position: fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  height: 146rpx;
+}
+.test_now{
+  width:160rpx;
+  height: 58rpx;
+  line-height: 58rpx;
+  text-align: center;
+  display: inline-block;
+}

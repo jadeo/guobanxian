@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test_subject_template/template",
+    "pages/test_manage/manage",
+    "pages/test_des_free/test_des",
+    "pages/test_des_money/test_des",
+    "pages/start_test/start_test",
+    "pages/search/search",
+    "pages/test_list/test_list",
+    "pages/search_result/result",
+    "pages/test_result/result",
+    "pages/match/match",
+    "pages/group_rank/rank",
+    "pages/my_center/my",
+    "pages/feedback/feedback",
+    "pages/more/more",
+    "pages/all_rank/rank",
+    "pages/hongbao/hongbao",
+    "pages/share_test/share",
+    "pages/postcard/postcard"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4DA6FF",
+    "navigationBarTitleText": "郭半仙",
+    "navigationBarTextStyle": "#fff"
+  }
+}

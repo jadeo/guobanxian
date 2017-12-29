@@ -1,0 +1,5 @@
+/* pages/more/more.wxss */
+@import '../match/match.wxss';
+.more_img{
+  border-radius: 50%;
+}

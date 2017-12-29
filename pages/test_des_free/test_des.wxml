@@ -1,0 +1,30 @@
+<!--pages/test_des/test_des.wxml-->
+<import src='../test_subject_template/template'/>
+<view class='container_wrap bg_gr'>
+    <!--测试详情  -->
+    <view class='test_des_free mokuai_wrap center test_des mb_20'>
+          <view class='f34 title_color bold test_des_title test_title line_clamp1'>{{test_des.test_title}}</view>
+          <view class='f24 des_color'>{{test_des.join_num}}人测过</view>
+          <image src='{{test_des.test_pic}}' mode='aspectFill'></image>
+          <view class='f28 cont_color tl cont_lineheight line_clamp4'>{{test_des.test_content}}</view>
+          <!--继续测试  -->
+           <!-- <view style='margin:0 auto;width:500rpx;padding:50rpx 0'>
+               <view class='btn_large bg_blue text_f title_wrap f36 border_radius'>继续测试</view> 
+          </view>  -->
+          <!--开始测试  -->
+          <view style='margin:0 auto;width:500rpx;padding:50rpx 0'>
+               <view class='btn_large bg_blue text_f title_wrap f36 border_radius' bindtap='start_test'>开始测试</view> 
+          </view> 
+          <!--重新测试和查看结果  -->
+          <!-- <view class='result flex' style='width:599rpx;margin:0 auto;padding:50rpx 0'>
+                  <text class='btn_small text_f bg_blue f36 title_wrap border_radius' style='margin-right:25rpx'>重新测试</text>
+                  <text class='btn_small text_f bg_blue f36 title_wrap border_radius' >查看结果</text>
+          </view> -->
+    </view>
+
+    <!--推荐  -->
+    <view class='mokuai_wrap border_bottom'>
+        <template is='nav' data='{{...item}}'></template>
+    </view>
+    <template is='test_subject'></template>
+</view>

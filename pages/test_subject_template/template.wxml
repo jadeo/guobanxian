@@ -1,0 +1,86 @@
+<!--pages/test_subject_template/template.wxml-->
+<template name='test_subject'>
+    <view class='test_subject_wrap flex border_bottom ptb bg_f just_between' wx:for='{{newsList}}' >
+    <view bindtap='test_des' data-id='{{item.id}}'>
+      <!-- 测试题左边 -->
+      <view class='test_subject_left' style='position:relative'>
+          <view class='test_subject_left_title f34 title_color line_clamp2 '>{{item.test_title}}</view>
+          <view class='test_subject_left_cont f24 cont_color line_clamp2'>{{item.test_content}}</view>
+          <view class='test_subject_left_person align'>
+              <view class='test_subject_left_person_left ve' style='position:absolute;bottom:0;left:0'>
+                  <text class='des f18 border_blue text_blue center'>情感</text>
+                  <text class='des f18 border_red text_red center'>精选</text>
+              </view>
+              <view class='test_subject_left_person_right f24 des_color ve' style='position:absolute;bottom:0;right:0'>{{item.join_num}}人测过</view>
+          </view>
+      </view>
+      </view>
+      <!--测试题右边  -->
+      <view class='test_subject_right'>
+        <image mode='aspectFill' class='test_img' src='{{item.test_pic}}'></image>
+        <text class='f24 text_f bg_red btn_ssmall center money'>￥0.99</text>
+      </view>
+    </view>
+    <!--按钮  -->
+ 
+    <view class='f36 text_red title_wrap center bg_f ' wx:if='{{pay}}'>
+        去支付
+    </view> 
+</template>
+
+<!--导航栏  -->
+<template name='nav'>
+      <view class='recommed_change flex title_wrap'>
+          <text class='f28 title_color flex1'>{{tuijian}}</text>
+          <view style='position:relative'><image wx:if="{{change=='换一批'}}" style='width:20rpx;height:20rpx;position:absolute;left:14rpx;top:38rpx' src='../../imgs/huan_icon.png'></image><text class='f24 cont_color change' style='padding-left:10rpx;'>{{change}}</text></view>
+      </view>
+</template>
+
+<template name='nav2'>
+      <view class='recommed_change flex title_wrap'>
+          <text class='f28 title_color flex1'>{{tuijian2}}</text>
+          <text class='f24 cont_color'>{{change2}}</text>
+      </view>
+</template>
+
+<!--带右侧按钮的导航栏  -->
+<template name='nav3'>
+       <view class='rank flex just_between title_wrap mokuai_wrap border_bottom'>
+            <view class='f32 title_color rank_left'>{{nav_left}}</view>
+            <view>
+                <text class='f28 cont_color' style='color:#808C92;margin-right:10rpx'>{{nav_right}}</text>
+                <image class='next' src='../../imgs/next_icon.png'></image>
+            </view>
+       </view>
+</template>
+
+<!--群匹配排行  -->
+<template name='rank'>
+ <view class='rank_wrap'>
+        <view class='flex rank_list just_between align padding_tb mokuai_wrap border_bottom'>
+            <view class='flex align'> 
+                <image class='mr_10 more_img' src='{{src}}'></image>
+                <view>
+                    <text class='f34 title_color'>{{group_name}}</text>
+                     <view class='f28 cont_color'>{{group_num}}</view> 
+                </view>
+            </view>
+            <view class='look_all text_f bg_blue border_radius' bindtap='look_all'>{{btn_name}}</view>
+        </view>
+    </view>
+</template>
+
+
+<!--弹出框  -->
+<template name='model'>
+    <view class='model_wrap bg_f border_radius' wx:if='{{model_hidden}}'>
+        <view class='model_cont center border_bottom'>
+            <view class='model_title title_color f32 mb_20'>标题标题标题标题标题</view>
+            <view class='model_des cont_color f28 mb_20'>说明说明说明</view>
+        </view>
+        <view class='model_btn flex'>
+             <view class='center f28 cont_color' style='border-right:1rpx solid #F0F2F7'>取消</view> 
+             <view class='center f28 text_blue' bindtap='sure'>确定</view>  
+        </view>
+    </view>
+</template>

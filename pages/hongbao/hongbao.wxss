@@ -1,0 +1,95 @@
+/* pages/hongbao/hongbao.wxss */
+
+.reword_wrap{
+  width:100%;
+  height: 100%;
+  background-color: #fff;
+
+}
+.reword_top{
+  position: relative;
+}
+.reword_top image{
+  width:750rpx;
+  height: 209rpx;
+}
+
+.reword_text{
+  width:120rpx;
+  height: 120rpx;
+  text-align: center;
+  line-height: 120rpx;
+  border-radius: 50%;
+  background-color: #FFCB41;
+  color:#fff;
+  position: absolute;
+  left:50%;
+  top:65%;
+  margin-left: -60rpx;
+}
+
+.reword_word{
+  color:#333333;
+  font-size: 32rpx;
+  margin-top:66rpx;
+  margin-bottom: 68rpx;
+  width:100%;
+  text-align: center;
+}
+.remord_money{
+  display: flex;
+  padding-left:90rpx;
+  text-align: center;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  color:#DE5B4E;
+  font-size: 24rpx;
+}
+.Grid-cell{
+  flex: 0 0 25%;
+  border:1px solid #DE5C4F;
+  height: 82rpx;
+  border-radius: 10rpx;
+  margin-right: 30rpx;
+  line-height: 82rpx;
+  margin-bottom:30rpx;
+}
+.remord_money text{
+  font-size: 44rpx;
+}
+form{
+  padding: 0 90rpx;
+  width:750rpx;
+  height: 82rpx;
+}
+ input{
+  border:1px solid #DE5C4F;
+  width:340rpx;
+  height: 82rpx;
+  border-radius: 10px;
+  line-height: 82rpx;
+  padding-left:30rpx;
+  display: inline-block;
+}
+
+.reword_any{
+  width:170rpx;
+  height: 82rpx;
+  text-align: center;
+  line-height: 82rpx;
+  background: #DE5C4F;
+  color: #fff;
+  font-size: 32rpx;
+  /* display: inline-block; */
+  border-radius: 5px;
+  float: right;
+  margin-right: 90rpx;
+}
+.any_wrap{
+  margin-top:30rpx;
+}
+
+.active{
+  background: #DE5C4F;
+  color:#fff;
+}

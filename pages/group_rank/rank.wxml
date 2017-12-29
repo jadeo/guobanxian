@@ -1,0 +1,18 @@
+<!--pages/group_rank/rank.wxml-->
+<view class='container_wrap bg_gr'>
+    <!--头部  -->
+    <view class='group_title mokuai_wrap border_bottom center'>
+        <view class='f34 bold title_color test_title'>测试标题测试标题测试标题测试标题测试标题测试标题测试标题测试标题</view>
+    </view>
+    <!--排行榜  -->
+    <view class='group_list_wrap'>
+    <view class='group_list flex just_between mokuai_wrap border_bottom'>
+          <view class='group_list_left flex align'>
+             <image class='rank_img' src='../../imgs/no1.png'></image>
+             <image class='info_img' src='../../imgs/1.png'></image>
+             <text class='f32 cont_color line_clamp1'>张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三</text>
+          </view> 
+          <view class='text_red group_list_right'>85%</view>
+    </view>
+    </view>
+</view>

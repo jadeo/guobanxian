@@ -1,0 +1,18 @@
+<!--pages/search/search.wxml-->
+<import src='../test_subject_template/template'/>
+     <!-- 搜索 -->
+<view class='search_wrap container_wrap bg_gr'>
+       <view class='header_full mokuai_wrap title_wrap border_bottom'>
+          <view class='input_wrap'>
+              <input class='ve f24 cont_color input2 bg_gr' placeholder='搜索' placeholder-style='color:#9BA0AE;font-size:24rpx;'> </input>
+              <i class="iconfont icon-search search "></i>
+              <i class="iconfont icon-wrong"></i>
+          </view>        
+          <text class='f32 text_blue'>搜索</text>
+     </view>  
+    <!--搜素结果  -->
+    <view class='search_result mokuai_wrap'>
+       <view class='title_wrap f28 title_color border_bottom'>搜索“爱情运势”的结果</view>
+    </view>
+    <template is='test_subject'></template>
+</view>

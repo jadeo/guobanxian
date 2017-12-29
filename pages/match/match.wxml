@@ -1,0 +1,25 @@
+<!--pages/rank/rank.wxml-->
+<import src='../test_subject_template/template'/>
+
+<view class='container_wrap bg_gr'>
+   <!-- <template is='rank' data='{{...item}}'></template> -->
+   <view class='mb_20 mokuai_wrap'>
+        <view class='match_cont border_bottom'>
+          <view class='match_title f34 title_color bold mb_20 line_clamp1'>#测试题目测试题目测试题目测试题目…#</view>
+          <view class='match_des f28 title_color line_clamp1'>#测试题目测试题目测试题目测试题目…#</view>
+        </view>
+        <view class='title_wrap' style='text-align:right'>
+            <text style='width:160rpx;height:58rpx;line-height:58rpx;display:inline-block' class='text_f bg_blue f30 center'>立即查看              </text>
+        </view>
+   </view>
+
+    <view class='mb_20 mokuai_wrap'>
+        <view class='match_cont border_bottom'>
+          <view class='match_title f34 title_color bold mb_20 line_clamp1'>#测试题目测试题目测试题目测试题目…#</view>
+          <view class='match_des f28 title_color line_clamp1'>#测试题目测试题目测试题目测试题目…#</view>
+        </view>
+        <view class='title_wrap' style='text-align:right'>
+            <text style='width:160rpx;height:58rpx;line-height:58rpx;display:inline-block' class='text_f bg_blue f30 center'>立即查看              </text>
+        </view>
+   </view>
+</view>

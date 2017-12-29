@@ -1,0 +1,16 @@
+/* pages/rank/rank.wxss */
+.rank_list image{
+  width:90rpx;
+  height: 90rpx;
+}
+.look_all{
+  width:160rpx;
+  height: 58rpx;
+  line-height: 58rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.match_cont{
+  height: 120rpx;
+  padding-top:30rpx;
+}

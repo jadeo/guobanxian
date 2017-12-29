@@ -1,0 +1,47 @@
+/* pages/test_des_money/test_des.wxss */
+.img_wrap{
+   width:100%;
+  height: 380rpx;
+}
+.money_img{
+  width:100%;
+  height: 100%;
+}
+.money_result text{
+  color:#444C52;
+}
+.money_result image{
+  width:24rpx;
+  height: 24rpx;
+  margin-right: 8rpx;
+}
+.test_jieshao{
+   max-height: 250rpx; 
+   padding-bottom: 30rpx;
+}
+.test_jieshao view{
+  padding-top:30rpx;
+  padding-bottom: 30rpx;
+  max-height: 190rpx;
+  overflow: hidden;
+  display: -webkit-box; 
+  -webkit-line-clamp:5;
+   display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.test_need_know{
+  height: 370rpx;
+  padding-top:30rpx;
+  margin-bottom: 80rpx;
+}
+.want_test{
+  position: fixed;
+  left:0;
+  bottom:0;
+  right: 0;
+}
+.want_test image{
+  width: 34rpx;
+  height: 32rpx;
+}

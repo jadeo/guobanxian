@@ -1,0 +1,15 @@
+/* pages/search/search.wxss */
+ @import "../index/index.wxss"; 
+.search_history{
+  padding-bottom: 30rpx;
+}
+.search_history_detail{
+   flex-wrap: wrap; 
+}
+.search_history_detail view{
+  padding:8rpx 30rpx;
+  border:1rpx solid #ABB5BC;
+  border-radius: 10rpx;
+   margin-right: 20rpx; 
+  margin-bottom: 20rpx;
+}

@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<import src='../test_subject_template/template'/>
+<view class="container_wrap bg_gr">
+  <!--头部  -->
+  <view class='header mokuai_wrap'>
+      <!--普通搜索  -->
+        <view class='header_primary'>
+          <i class="iconfont icon-time" bindtap='manage'></i>
+          <view class='input_wrap'>
+              <input class='ve f24 cont_color input1 bg_gr' placeholder='搜索' placeholder-style='color:#9BA0AE;font-size:24rpx' bindtap='search'></input>
+              <i class="iconfont icon-search "></i>
+          </view>
+          <i class="iconfont icon-people" bindtap='my_center'></i>
+      </view>  
+  </view>
+  <!--轮播  -->
+<scroll-view scroll-y style='height:{{scrollHeight}}rpx'>
+      <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{banner.banner}}" wx:key='*this'>
+            <swiper-item>
+              <image src="{{item.test_pic}}" class="slide-image" />
+            </swiper-item>
+          </block>
+      </swiper>
+      <!--分类  -->
+      <view class='classify flex mokuai_wrap mb_20'>
+        <view class='flex_cell' wx:for='{{classify}}' wx:key='*this' bindtap='test_list'>
+          <image src='{{item.img}}'></image>
+          <text class='f24 cont_color'>{{item.text}}</text>
+        </view>
+      </view>
+      <!--推荐  -->
+      <view class='recommed mokuai_wrap mb_20'>
+            <template is='nav' data='{{...item}}'></template>
+            <view class='recommed_cont_wrap flex'>
+              <view class='recommed_cont ovh' bindtap='test_des'>
+                  <view class='img_wrap pr'>
+                      <image src='../../imgs/1.png'></image>
+                      <text class='f24 text_f bg_red btn_ssmall center money'>￥0.99</text>
+                  </view>
+                  <view class='recommed_title bold f28 title_color mt_30 line_clamp2'>测试标题测试标测试标题测试标测试标题测试标测试标题测试标</view>
+                  <view class='f24 des_color mt_10 person_num ovh'>454564646人测过</view>
+              </view>
+            </view>
+      </view>
+      <!-- 全部测试题· -->
+          <view class='recommed_change flex title_wrap mokuai_wrap border_bottom'>
+              <text class='f28 title_color flex1'>全部</text>
+              <view class='f28 cont_color compare' >
+                  <text class="{{idx==index?'active':''}} pr" wx:for='{{all_compare}}' wx:for-index='index' data-index='{{index}}' data-idx='{{idx}}' bindtap='tabab' wx:key='*this'>{{item}}</text>
+              </view>
+          </view>
+      <template is='test_subject' data='{{...item}}'></template>
+</scroll-view>
+</view>
+
+
+<!--弹出框  -->
+<view class='mask' hidden='mask_hidden'></view>
+<template is='model'></template>

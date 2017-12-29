@@ -1,0 +1,45 @@
+/* pages/all_rank/rank.wxss */
+.all_top{
+  height: 160rpx;
+  padding:0 30rpx;
+}
+.all_top view:first-child image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.all_top view:first-child text{
+  display: inline-block;
+  max-width: 420rpx;
+  height: 44rpx;
+  overflow: hidden;
+}
+.group_list_wrap{
+  margin:0 30rpx;
+}
+.group_list{
+  padding:0 30rpx;
+  width:630rpx;
+}
+.user_faqi image{
+  width:40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.group_list_top view{
+  height: 44rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.look_rank{
+  width:160rpx;
+  height: 58rpx;
+  line-height: 58rpx;
+  text-align: center;
+}
+.username{
+  max-width: 380rpx;
+  overflow: hidden;
+}
+.group_list_bottom{
+  height: 88rpx;
+}

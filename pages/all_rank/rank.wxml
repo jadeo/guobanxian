@@ -1,0 +1,40 @@
+<!--pages/all_rank/rank.wxml-->
+<view class='container_wrap bg_gr'>
+    <view class='all_top flex bg_blue align just_between mb_20'>
+        <view>
+            <image class='ve mr_10' src='../../imgs/1.png'></image>
+            <text class='text_f f32 ve'>群名字群名字群名字群名字群名字群名字群名字群名字群名字群名字群名字</text>
+        </view>
+        <view class='text_f f32'>23人</view>
+    </view>
+
+    <!--列表  -->
+    <view class='group_list_wrap'>
+          <view class='group_list bg_f mb_20'>
+                <view class='group_list_top border_bottom' style='height:90rpx;padding:30rpx 0'>
+                    <view class='title_color bold f34 title mb_20'>群名字群名字群名字群名字群名字群名字群名字群名字群名字群名字群名字</view>
+                    <view class='title_color f28'>群名字群名字群名字群名字群名字群名字群名字群名字群名字群名字群名字</view>
+                </view>
+                <view class='group_list_bottom flex just_between align'>
+                    <view class='user_faqi'>
+                        <image class='mr_10 ve' src='../../imgs/1.png'></image>
+                        <text class='f28 cont_color text_ovh inline_block username ve'>群名字群名字群名字群名字群名字名字群名字群名字群</text>
+                    </view> 
+                    <view class='bg_blue text_f border_radius look_rank f30'>查看排行</view>
+                </view>
+          </view>
+          <view class='group_list bg_f mb_20'>
+                <view class='group_list_top border_bottom' style='height:90rpx;padding:30rpx 0'>
+                    <view class='title_color bold f34 title mb_20'>群名字群名字群名字群名字群名字群名字群名字群名字群名字群名字群名字</view>
+                    <view class='title_color f28'>群名字群名字群名字群名字群名字群名字群名字群名字群名字群名字群名字</view>
+                </view>
+                <view class='group_list_bottom flex just_between align'>
+                    <view class='user_faqi'>
+                        <image class='mr_10 ve' src='../../imgs/1.png'></image>
+                        <text class='f28 cont_color text_ovh inline_block username ve'>群名字群名字群名字群名字群名字名字群名字群名字群</text>
+                    </view> 
+                    <view class='bg_blue text_f border_radius look_rank f30'>查看排行</view>
+                </view>
+          </view>
+    </view> 
+</view>

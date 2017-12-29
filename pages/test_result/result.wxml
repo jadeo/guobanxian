@@ -1,0 +1,77 @@
+<!--pages/test_result/result.wxml-->
+<import src='../test_subject_template/template'/>
+<view class='container_wrap bg_gr'>
+        <view class='f34 title_color bold line_height_100 mokuai_wrap center test_title border_bottom line_clamp1'>测试标题测试标题测试标题测试标题测试标题测试标题测试标题测试标题</view>
+        <!--结果详情  -->
+        <view class='test_des mokuai_wrap' style='padding-bottom:30rpx;'>
+            <view class='test_des_detail'>
+                <text class='f24 cont_color test_person'>测试人</text>
+                <view class='f28 title_color'>少侠张三丰</view>
+            </view>
+             <view class='test_des_detail'>
+                <text class='f24 cont_color test_person'>测试结果</text>
+                <view class='f28 title_color'>测试结果标题</view>
+            </view>
+             <view class='test_des_detail'>
+                <text class='f24 cont_color test_person'>测试说明</text>
+                <view class='f28 title_color'>测试结果内容测试结果内容测试结果内容测试结果内容测试结果内容测试结果内容测试结果内容测试结果内容测试结果内容测试结果内容测试结果内容测试结果内容测试结果内容测试结果内容</view>
+            </view>
+        </view>
+        <!--按钮  -->
+        <view class='flex just_between' style='padding: 0 80rpx;background:#fff'>
+            <button class='btn_small text_f bg_blue title_wrap center return' open-type='share'>分享到群</button> 
+            <view class='btn_small text_f bg_blue title_wrap center return' bindtap='look_result'>生成卡片</view> 
+        </view>
+       <view class='f24 text_blue center bg_f border_bottom just_center' style='height:90rpxp;padding:30rpx 0;'>
+              <text style='display:block'>23561人与你测试匹配度100%</text>
+              <text style='display:block'> 分享到群里看群里的小伙伴与你的匹配度</text>
+       </view>
+
+       <!--测试匹配度  -->
+       <view class='mokuai_wrap title_wrap border_bottom' bindtap='rank'><template is='nav2' data='{{...item}}'></template></view>
+       <view class='group_list_wrap mb_20'>
+          <!--有朋友参与测试  -->
+          <!-- <view class='friend_test_press'>
+              <view class='group_list flex just_between mokuai_wrap border_bottom'>
+                  <view class='group_list_left flex align'>
+                    <image class='rank_img' src='../../imgs/1.png'></image>
+                    <image class='info_img' src='../../imgs/1.png'></image>
+                    <text class='f32 cont_color'>张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三</text>
+                  </view> 
+                <view class='text_red group_list_right'>85%</view>
+              </view>
+          </view> -->
+          <!--没有朋友参与测试  -->
+          <view class='friend_test_nor mokuai_wrap border_bottom center'>
+              <view style='margin-bottom:40rpx'>
+                  <text class='f28 title_color' style='display:block'>你的好友还未测试本测试题</text>
+                  <text class='f28 title_color'>立即分享给好友即可查看与你的匹配度</text>
+              </view>
+              <!--分享  -->
+              <view class='flex just_center'>
+                 <button class='text_f bg_blue f36 border_radius title_wrap center btn_large' bindtap='share'>立即分享</button>
+              </view>
+          </view>
+          <!--查看全部  -->
+          <view class='title_color f30 center title_wrap bg_f' bindtap='all_match'>查看全部</view>
+       </view>
+       <!--赞赏  -->
+       <view class='reword center mokuai_wrap mb_20'>
+          <view class='flex just_center mb_20'><view class='reword_text text_red' bindtap='reword'>赏</view></view>
+          <view class='f28 title_color mb_20'>半仙儿这厢有礼了</view>
+          <view class='info_wrap flex'>
+              <view class='info_cell'><image src='../../imgs/1.png'></image></view>
+              <view class='info_cell'><image src='../../imgs/1.png'></image></view>
+              <view class='info_cell'><image src='../../imgs/1.png'></image></view>
+              <view class='info_cell'><image src='../../imgs/1.png'></image></view>
+              <view class='info_cell'><image src='../../imgs/1.png'></image></view>
+              <view class='info_cell'><image src='../../imgs/1.png'></image></view>
+              <view class='info_cell'><image src='../../imgs/1.png'></image></view>
+              <view class='info_cell'><image src='../../imgs/1.png'></image></view>
+              <view class='info_cell'><image src='../../imgs/1.png'></image></view>
+          </view> 
+       </view>
+       <!--推荐  -->
+       <view class='mokuai_wrap border_bottom'><template is='nav' data='{{...item}}'></template></view>
+       <template is='test_subject' data='{{...item}}'></template>
+</view>

@@ -1,0 +1,60 @@
+<!--pages/test_des/test_des.wxml-->
+<import src='../test_subject_template/template'/>
+<view class='container_wrap bg_gr'>
+    <!--测试详情  -->
+    <view class='img_wrap'><image class='money_img' src='../../imgs/1.png'></image></view>
+    <view class='test_des_money mokuai_wrap center test_des' >
+          <view class='f34 title_color bold test_des_title'>测试标题测试标题测试标题测试标题</view>
+          <view class='f24 des_color'>123455人测过</view>
+          <view class='f28 cont_color' style='padding:30rpx 0'>
+              <text class='f40 text_red'>￥0.99</text>
+              <text class='f24 des_color' style='text-decoration: line-through;margin-left:6rpx;'>￥88.00</text>
+          </view>
+    </view>
+    <view class='money_result flex title_wrap bg_f mb_20 border_top center '>
+                <view class='flex1'><image src='../../imgs/1.png'></image><text class='f24'>20道精选试题</text></view>
+                <view class='flex1'><image src='../../imgs/1.png'></image><text class='f24'>生成专业报告</text></view>
+                <view class='flex1'><image src='../../imgs/1.png'></image><text class='f24'>321112人已测</text></view>
+    </view>
+    <!--评测介绍  -->
+    <view class='mokuai_wrap border_bottom'>
+        <template is='nav' data='{{...item}}'></template>
+    </view>
+    <view class='f28 test_jieshao ovh mokuai_wrap cont_lineheight mb_20' style='color:#818C92'>
+        <view>
+            内容缩略内容缩略内容缩略内容缩略内容缩略内容缩略内容缩略内容缩略内内容缩略内容缩略内容缩略内容缩略内容缩略内容缩略内容缩略内容缩略内容缩略内容缩略内容缩略内容缩略内
+容缩略内容缩略内容缩略内容缩略容缩略内容缩略内容缩略内容缩略容缩略内容缩略内容缩略内容缩略容缩略内容缩略内容缩略内容缩略
+        </view>
+    </view>
+    <!--评测须知  -->
+    <view class='mokuai_wrap border_bottom'>
+        <template is='nav2' data='{{...item}}'></template>
+    </view>
+    <view class='mokuai_wrap f28 test_need_know cont_lineheight' style='color:#808C92'>
+        <view>① 本评测为付费测试，体验价为<text class='text_red'>0.99元</text></view>
+        <view>② 测试题：<text class='text_red'>20题</text>，测试时间：<text class='text_red'>10分钟</text></view>
+        <view>③ 为保证准确性，一次付费只能测试一次，请根据实际情况作答，答题结束后会生成一份专业的测评报告</view>
+        <view>④ 付费成功后将自动跳转到答题页，由于题目数较多，可能需要几秒进行加载，建议在网络较好的情况下测试</view>
+    </view>
+
+    <!--想测  -->
+    <!-- <view class='want_test title_wrap flex bg_f center'>
+        <view class='flex1'><image class='ve mr_10' src='../../imgs/1.png'></image><text class='f28 title_color'>想测</text></view>
+        <view class='btn_large text_f bg_red f36 center'>立即购买</view>
+    </view> -->
+    <!--继续测试  -->
+    <!-- <view class='want_test title_wrap bg_f'>
+            <view style='width:500rpx;margin:0 auto'>
+                <view class='btn_large text_f bg_red f36 center'>继续测试</view>
+            </view>
+    </view> -->
+    <!--再次购买  -->
+    <view class='want_test center bg_f'>
+       <view class='result flex' style='width:599rpx;margin:0 auto'>
+                  <text class='btn_small text_f bg_red f36 title_wrap' style='margin-right:25rpx'>再次购买</text>
+                  <text class='btn_small text_f bg_red f36 title_wrap' >查看结果</text>
+       </view>
+    </view>
+</view>
+
+

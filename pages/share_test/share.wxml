@@ -1,0 +1,20 @@
+<!--pages/share_test/share.wxml-->
+<view class='container_wrap share_bg'>
+    <view class='share_top bg_blue'>
+    </view>
+    <view class='share_userinfo center bg_f'>
+            <view style='border-bottom:2rpx dotted #D3DAE9;position:relative'>
+                <image src='../../imgs/1.png'></image>
+                <view class='f32 username line_clamp1' style='color:#444C52;line-height:70rpx;'>用户名用户名用户名用户名用户名用户名用户名用户名用户名用户名用户名用户名</view>
+                <view class='dotted dotted_left'></view>
+                <view class='dotted dotted_right'></view>
+            </view>
+            <view class='title_color f28 ' style='margin-top:50rpx;'>向你分享了</view>
+            <view class='title_color f34 bold test_title line_clamp1'>#测试标题测试标题测试标题测试标题##测试标题测试标题测试标题测试标题#</view>
+            <view class='f28' style='color:#444C52'>23561人与TA测试匹配度100%</view>
+            <view class='f28' style='color:#444C52'>立即测试即可查看与TA的测试匹配度</view>
+            <view class='test_now_wrap'>
+                <view class='btn_large text_f bg_blue f36 title_wrap border_radius test_now'>立即测试</view>
+            </view>
+    </view>
+</view>
